@@ -11,20 +11,22 @@ import { StyleSheet, Text, View, TextInput } from 'react-native';
 
 const inputStyles = StyleSheet.create({
     input:{
-        borderRadius:4,
-        shadowColor:"#000",
+        borderRadius:8,
+        shadowColor:"#DDEBDC",
         shadowOffset:{
             width:0,
-            height:1,
+            height:10,
         },
-        shadowOpacity:0.22,
-        shadowRadius: 2.22,
+        shadowOpacity:1.22,
+        shadowRadius: 3.22,
         elevation:3,
-        width: '100%',
+        width: 315,
+        height: 48,
         marginHorizontal: '15%',
         marginVertical: 25,
         paddingHorizontal:15,
         paddingVertical:15,
         fontSize:18,
+        
     }
 })

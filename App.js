@@ -1,30 +1,23 @@
 import React,{useState} from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 import { AuthContext } from './components/authContext';
 import Main from './components/Main';
-import AuthForm from './components/AuthForm';
+import AuthForm from './components/AuthForm'; 
 
 
 
 
 export default function App() {
-  const[isAuth, setIsAuth]=useState(false)
+  /* const isAuth=false  */
+  const[isAuth, setIsAuth]=useState()
   return (
     <AuthContext.Provider value={{isAuth, setIsAuth}}>
-      <View style={styles.container}>
-      <Text>Авторизация</Text>
-
-      {!isAuth ? <AuthForm/> : <Main styles={styles}/>}
-    </View>
+       <View > 
+      {!isAuth ? <AuthForm/> : <Main/> }
+     </View> 
     </AuthContext.Provider>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex:1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
+
