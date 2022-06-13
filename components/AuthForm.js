@@ -31,10 +31,10 @@ const AuthForm=()=> {
   }
   return (
     <View style={{width:250, left:-30}}>
-      <Image style={styles.img} source={require('../img/el.png')} /> 
-      <Image style={styles.img2} source={require('../img/el2.png')} /> 
+      <Image style={styles.img} source={require('./img/el.png')} /> 
+      <Image style={styles.img2} source={require('./img/el2.png')} /> 
       <Text style={styles.text}>Sign In</Text>
-        <Image style={styles.img3} source={require('../img/el3.png')} /> 
+        <Image style={styles.img3} source={require('./img/el3.png')} /> 
       <Field
       value={email}
       onChangeText={setEmail}

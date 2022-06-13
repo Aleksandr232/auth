@@ -1,8 +1,8 @@
 import React,{useState} from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 import { AuthContext } from './components/authContext';
-import Main from './components/Main';
 import AuthForm from './components/AuthForm'; 
+import Menu from './components/menu';
 
 
 
@@ -15,7 +15,7 @@ export default function App() {
     
     <AuthContext.Provider value={{isAuth, setIsAuth}}>
        <View >  
-      {!isAuth ? <AuthForm/> : <Main/> }
+      {!isAuth ? <AuthForm/> : <Menu />}
      </View> 
     </AuthContext.Provider>
   );
