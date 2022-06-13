@@ -1,9 +1,4 @@
-import React from 'react';
 import { StyleSheet, Text, View, ImageBackground } from 'react-native';
-import Menutabs from './Menutabs';
-
-
-
 
 
 const Main=()=> {
@@ -22,6 +17,8 @@ const Main=()=> {
     
   );
 }
+
+
 
 const styles=StyleSheet.create({
   container:{
@@ -46,3 +43,8 @@ const styles=StyleSheet.create({
 })
 
 export default Main
+
+
+
+
+
