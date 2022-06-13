@@ -7,12 +7,14 @@ import AuthForm from './components/AuthForm';
 
 
 
+
 export default function App() {
   /* const isAuth=false  */
   const[isAuth, setIsAuth]=useState()
   return (
+    
     <AuthContext.Provider value={{isAuth, setIsAuth}}>
-       <View > 
+       <View >  
       {!isAuth ? <AuthForm/> : <Main/> }
      </View> 
     </AuthContext.Provider>

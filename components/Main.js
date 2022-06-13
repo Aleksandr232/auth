@@ -1,26 +1,32 @@
 import React from 'react';
 import { StyleSheet, Text, View, ImageBackground } from 'react-native';
+import Menutabs from './Menutabs';
+
 
 
 
 
 const Main=()=> {
   return (
+  
     <View style={styles.container}>
+       
         <ImageBackground source={require('../img/el4.png')} style={styles.img} >
            <Text style={styles.text}>Books</Text>
            
+          
         </ImageBackground>
         
         
     </View>
+    
   );
 }
 
 const styles=StyleSheet.create({
   container:{
     backgroundColor:'#E5E5E5',
-    height:'100%'
+    height:"100%"
   },
   img:{
     width:'100%',
@@ -35,7 +41,8 @@ const styles=StyleSheet.create({
     color:'#FFFF',
     fontSize:19,
     fontWeight:'700'
-  }
+  },
+  
 })
 
 export default Main
