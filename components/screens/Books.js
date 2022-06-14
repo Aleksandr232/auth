@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, ImageBackground, Image, TouchableHighlight, Linking } from 'react-native';
+import { StyleSheet, Text, View, ImageBackground, Image, TouchableHighlight, Linking, FlatList } from 'react-native';
 import  {InputField}  from '../UI/InputField';
 
 
@@ -19,7 +19,8 @@ const Books=()=>{
           placeholder="Поиск..."/>
           <Text style={styles.text1}>Результат</Text>
         </View>
-       
+        
+        
     </View>
     )
 }
