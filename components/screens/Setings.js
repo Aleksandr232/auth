@@ -28,7 +28,7 @@ const styles=StyleSheet.create({
     text:{
       width: 130,
       height: 24,
-      left: '42%',
+      left: '40%',
       top: 160,
       color:'#FFFF',
       fontSize:19,
