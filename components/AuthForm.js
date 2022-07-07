@@ -15,15 +15,16 @@ const AuthForm=()=> {
 
   const authHandler=async()=>{
     if(email && password){
-        if(email ===! 'row@232.ru'){
+        if(email !== 'row@232.ru'){
             return setError('не верная почта')
         }
-        if(password ===! '12345'){
+        if(password !== '12345'){
             return setError('не верный пароль')
         }
 
-        await AsyncStorage.setItem('row@232.ru', '12345')
+        await AsyncStorage.setItem('row@232.ru', '12345' )
         setIsAuth(true)
+        
     }else{
         /* setError('Заполните все поля!') */
         
@@ -38,7 +39,7 @@ const AuthForm=()=> {
       <Field
       value={email}
       onChangeText={setEmail}
-      placeholder="Почта..."/>
+      placeholder='Почта'/>
       <Field
       value={password}
       onChangeText={setPassword}
