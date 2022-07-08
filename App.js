@@ -9,7 +9,7 @@ import Menu from './components/menu';
 
 
 export default function App() {
-  /* const isAuth=false  */
+ /*  const isAuth=false  */
   const[isAuth, setIsAuth]=useState()
   return (
     

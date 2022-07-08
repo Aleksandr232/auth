@@ -22,7 +22,7 @@ const AuthForm=()=> {
             return setError('не верный пароль')
         }
 
-        await AsyncStorage.setItem('row@232.ru', '12345' )
+        await AsyncStorage.setItem('row@232.ru', '12345')
         setIsAuth(true)
         
     }else{

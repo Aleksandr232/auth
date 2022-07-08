@@ -1,6 +1,14 @@
-import { StyleSheet, Text, View, ImageBackground } from 'react-native';
+import React from 'react';
+import { StyleSheet, Text, View, ImageBackground, Button} from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
 
 const Setings=()=>{
+  
+  const logout = async() => {
+    await AsyncStorage.removeItem('row@232.ru');
+    setIsAuth(true)
+  }
     return(
         <View style={styles.container}>
        
@@ -10,7 +18,12 @@ const Setings=()=>{
           
         </ImageBackground>
         
-       
+       <View>
+          <Button 
+          title='Выход'
+          onPress={logout}
+          />
+       </View>
     </View>
     )
 }
