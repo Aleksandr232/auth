@@ -21,7 +21,7 @@ const Books=()=>{
           <Text style={styles.text1}>Результат</Text>
         </View>
         <View>
-            <Data/>
+              <Data/>
         </View>
         
     </View>

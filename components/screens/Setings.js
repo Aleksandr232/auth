@@ -18,12 +18,7 @@ const Setings=()=>{
           
         </ImageBackground>
         
-       <View>
-          <Button 
-          title='Выход'
-          onPress={logout}
-          />
-       </View>
+       
     </View>
     )
 }
