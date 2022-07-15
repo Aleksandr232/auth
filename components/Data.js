@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
     width: 415,
     height: 347,
     left: 30,
-    bottom: 140,
+    bottom: 140
   },
   item: {
     backgroundColor: "#fff",
