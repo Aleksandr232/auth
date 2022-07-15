@@ -16,9 +16,11 @@ import  POST  from "./POST";
 
 const Data = () => {
   const [post, setPost]=useState(POST)
+  const [isRender, setIsRender] = useState(true)
+  const [isModalVisible, setisModalVisible]=useState(false)
   const keyExtractor = useCallback(item => item.id.toString())
   const Item = ({ title, img, author }) => (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={()=>onPressItem(Item)}>
     <View style={styles.item}>
       <Text style={styles.title}>{title}</Text>
       <Text style={styles.author}>{author}</Text>
@@ -37,13 +39,25 @@ const Data = () => {
     <Item title={item.title} img={item.img} author={item.author} />
   ));
 
+  const onPressItem=(item)=>{
+    setisModalVisible(true)
+  }
+
   return (
     <SafeAreaView style={styles.container}>
       <FlatList
         data={post}
         renderItem={renderItem}
         keyExtractor={keyExtractor}
+        extraData={isRender}
       />
+      <Modal
+        animationType="fade"
+        visible={isModalVisible}
+        onRequestClose={()=>setisModalVisible(false)}
+      >
+        <Text>IERG</Text>
+      </Modal>
     </SafeAreaView>
   );
 };
