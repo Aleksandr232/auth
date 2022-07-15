@@ -27,12 +27,12 @@ const Data = () => {
 const Item = ({ title, img})=> (
   <View style={styles.item}>
    <Text style={styles.title}>{title}</Text>
-        <Image style={{left:4, width:71, height:107}} source={img}/>
+        <Image style={{left:4, width:71, height:107, bottom:50}} source={img}/>
         <View style={styles.rating}>
-            <AirbnbRating
+            <Rating
               count={5}
               defaultRating={4}
-              size={16}
+              imageSize={16}
           />
       </View>
   </View>
@@ -65,16 +65,16 @@ const styles = StyleSheet.create({
     bottom:140
   },
   item: {
-      backgroundColor: '#E5E5E5',
+      backgroundColor: '#fff',
       padding: 20,
       marginVertical: 8,
       marginHorizontal: 16,
       width: 315,
-      height: 347,
+      height: 147,
     },
     rating:{
-      left:120,
-      top:30
+      left:20,
+      bottom:50
     },
     title:{
       left: '40.53%',
