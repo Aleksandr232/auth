@@ -4,6 +4,7 @@ import  {InputField}  from '../UI/InputField';
 import Data from '../Data';
 
 
+
 const Books=()=>{
     return(
         <View style={styles.container}>
@@ -21,7 +22,7 @@ const Books=()=>{
           <Text style={styles.text1}>Результат</Text>
         </View>
         <View>
-              <Data/>
+              <Data />
         </View>
     </View>
     )
