@@ -2,30 +2,33 @@ import React from 'react';
 import { SafeAreaView, View, FlatList, StyleSheet, Text, StatusBar, ScrollView, Image } from 'react-native';
  import { Rating, AirbnbRating } from 'react-native-ratings';
 
-const DATA = [
-  {
-    id: '1',
-    title: 'Remote: Office Not Required',
-    img: 'img/image2.png'
-  },
-  {
-    id: '2',
-    title: 'Papillon',
-    img: 'https://n1s1.hsmedia.ru/c0/f3/11/c0f3118d2a80f0f62409e68ccefab345/728x542_1_390d29f38af62661e1e5cd685acda5a2@1000x745_0xac120003_18591848241576673801.jpg'
-  },
-  {
-    id: '3',
-    title: 'The Dark Tower:The Gunslinger',
-    img: 'https://n1s1.hsmedia.ru/c0/f3/11/c0f3118d2a80f0f62409e68ccefab345/728x542_1_390d29f38af62661e1e5cd685acda5a2@1000x745_0xac120003_18591848241576673801.jpg'
-  }
-  
-];
+
+const Data = () => {
+
+      const DATA = [
+        {
+          id: '1',
+          title: 'Remote: Office Not Required',
+          img: require('./img/image2.png')
+        },
+        {
+          id: '2',
+          title: 'Papillon',
+          img: 'https://n1s1.hsmedia.ru/c0/f3/11/c0f3118d2a80f0f62409e68ccefab345/728x542_1_390d29f38af62661e1e5cd685acda5a2@1000x745_0xac120003_18591848241576673801.jpg'
+        },
+        {
+          id: '3',
+          title: 'The Dark Tower:The Gunslinger',
+          img: 'https://n1s1.hsmedia.ru/c0/f3/11/c0f3118d2a80f0f62409e68ccefab345/728x542_1_390d29f38af62661e1e5cd685acda5a2@1000x745_0xac120003_18591848241576673801.jpg'
+        }
+        
+      ];
 
 const Item = ({ title, img})=> (
   <View style={styles.item}>
    <Text style={styles.title}>{title}</Text>
-        <Image style={{left:40, width:40}} source={{uri:img}}/>
-      <View style={styles.rating}>
+        <Image style={{left:4, width:71, height:107}} source={img}/>
+        <View style={styles.rating}>
             <AirbnbRating
               count={5}
               defaultRating={4}
@@ -36,21 +39,19 @@ const Item = ({ title, img})=> (
   
 );
 
-const Data = () => {
+
   const renderItem = ({ item }) => (
-         <Item title={item.title} />   
+         <Item title={item.title} img={item.img} />   
   );
 
- /*  const renderItes = ({ id }) => (
-    <Item img={id.img} /> 
-); */
+ 
 
   return (
     <SafeAreaView style={styles.container}>
         <FlatList
         data={DATA}
         renderItem={renderItem}
-        keyExtractor={item => item.title}
+        keyExtractor={item => item.id}
       />
     </SafeAreaView>
   );
@@ -69,11 +70,21 @@ const styles = StyleSheet.create({
       marginVertical: 8,
       marginHorizontal: 16,
       width: 315,
-      height: 147,
+      height: 347,
     },
     rating:{
-      left:70,
-      top:40
+      left:120,
+      top:30
+    },
+    title:{
+      left: '40.53%',
+      right: '10.93%',
+      top: '1.16%',
+      bottom: '63.18%',
+      color: '#384F7D',
+      fontSize:18,
+      width:200
+      
     }
   
 });
