@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, Text, View, ImageBackground, Image, TouchableHighlight, Linking } from 'react-native';
-
 import  {InputField}  from '../UI/InputField';
 import Data from '../Data';
 
@@ -24,14 +23,13 @@ const Books=()=>{
         <View>
               <Data/>
         </View>
-        
     </View>
     )
 }
 
 const styles=StyleSheet.create({
     container:{
-      backgroundColor:'inear-gradient(315deg, rgba(255, 255, 255, 0.61) 3.5%, rgba(121, 171, 252, 0.61) 93.61%, rgba(96, 108, 255, 0.61) 147.83%);',
+      backgroundColor:'rgba(255, 255, 255, 0.61)',
       height:"100%"
     },
     img:{
@@ -65,7 +63,8 @@ const styles=StyleSheet.create({
       fontWeight:"700",
       color:'#384F7D',
       left:20
-    }
+    },
+    
     
   })
 

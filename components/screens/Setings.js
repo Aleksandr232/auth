@@ -25,7 +25,7 @@ const Setings=()=>{
 
 const styles=StyleSheet.create({
     container:{
-      backgroundColor:'#E5E5E5',
+      backgroundColor:'rgba(255, 255, 255, 0.61)',
       height:"100%"
     },
     img:{

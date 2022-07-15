@@ -8,6 +8,7 @@ import {
   StatusBar,
   ScrollView,
   Image,
+  TouchableOpacity
 } from "react-native";
 import { Rating, AirbnbRating } from "react-native-ratings";
 
@@ -34,6 +35,7 @@ const Data = () => {
   ];
 
   const Item = ({ title, img, author }) => (
+    <TouchableOpacity>
     <View style={styles.item}>
       <Text style={styles.title}>{title}</Text>
       <Text style={styles.author}>{author}</Text>
@@ -45,6 +47,7 @@ const Data = () => {
         <Rating count={5} defaultRating={4} imageSize={16} />
       </View>
     </View>
+    </TouchableOpacity>
   );
 
   const renderItem = ({ item }) => (
@@ -65,7 +68,7 @@ const Data = () => {
 const styles = StyleSheet.create({
   container: {
     width: 415,
-    height: 347,
+    height: 370,
     left: 30,
     bottom: 140
   },

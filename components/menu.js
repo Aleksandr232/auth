@@ -26,7 +26,7 @@ export default function Menu() {
         <View style={styles.container}>
               
         <BottomNavigation
-        barStyle={{ backgroundColor: '#E5E5E5' }}
+        barStyle={{ backgroundColor: 'rgba(255, 255, 255, 0.61)' }}
       navigationState={{ index, routes }}
       onIndexChange={setIndex}
       renderScene={renderScene}
@@ -40,7 +40,7 @@ export default function Menu() {
 
   const styles=StyleSheet.create({
     container:{
-      backgroundColor:'#E5E5E5',
+      backgroundColor:'rgba(255, 255, 255, 0.61)',
       height:"100%"
     },
     img:{
