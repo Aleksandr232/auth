@@ -1,4 +1,4 @@
-import React,{useCallback} from "react";
+import React,{useCallback, useState} from "react";
 import {
   SafeAreaView,
   View,
@@ -8,12 +8,14 @@ import {
   StatusBar,
   ScrollView,
   Image,
-  TouchableOpacity
+  TouchableOpacity,
+  Modal
 } from "react-native";
 import { Rating, AirbnbRating } from "react-native-ratings";
 import  POST  from "./POST";
 
 const Data = () => {
+  const [post, setPost]=useState(POST)
   const keyExtractor = useCallback(item => item.id.toString())
   const Item = ({ title, img, author }) => (
     <TouchableOpacity>
@@ -38,7 +40,7 @@ const Data = () => {
   return (
     <SafeAreaView style={styles.container}>
       <FlatList
-        data={POST}
+        data={post}
         renderItem={renderItem}
         keyExtractor={keyExtractor}
       />
