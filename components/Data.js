@@ -73,11 +73,15 @@ const Data = () => {
         extraData={isRender}
       />
       <Modal
+        data={post}
+        renderItem={renderItem}
+        keyExtractor={keyExtractor}
+        extraData={isRender}
         animationType="fade"
         visible={isModalVisible}
         onRequestClose={()=>setisModalVisible(false)}
       >
-          <Modals/>
+          <Modals />
       </Modal>
     </SafeAreaView>
   );
@@ -147,11 +151,10 @@ const styles = StyleSheet.create({
     left:20
   },
   textModal:{
-    left: '50%',
-    right: '75.96%',
-    top: '10.53%',
-    bottom: '26.32%',
-    color:'#111'
+    flex:1,
+    top:30,
+    color:"red",
+    
   }
 });
 
