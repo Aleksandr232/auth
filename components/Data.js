@@ -9,7 +9,9 @@ import {
   ScrollView,
   Image,
   TouchableOpacity,
-  Modal
+  Modal,
+  ImageBackground,
+  Button
 } from "react-native";
 import { Rating, AirbnbRating } from "react-native-ratings";
 import  POST  from "./POST";
@@ -43,6 +45,25 @@ const Data = () => {
     setisModalVisible(true)
   }
 
+  const onPressNoItem=(item)=>{
+    setisModalVisible(false)
+  }
+
+  const Modals=({ title, img, author })=>(
+    <View style={styles.container1}>
+    <ImageBackground source={require('./img/el4.png')}  style={styles.img} >
+      <Text style={styles.text}>Книга</Text>
+      <View style={{flex:1, top:140, left:50}}>
+          <TouchableOpacity onPress={()=>onPressNoItem(Item)}>
+              <Image source={require('./img/strel.png')}/>
+          </TouchableOpacity>
+      </View>
+    </ImageBackground>
+        <Text style={styles.textModal}>{title}</Text>
+        <Text style={styles.author}>{author}</Text>
+  </View>
+  )
+
   return (
     <SafeAreaView style={styles.container}>
       <FlatList
@@ -56,7 +77,7 @@ const Data = () => {
         visible={isModalVisible}
         onRequestClose={()=>setisModalVisible(false)}
       >
-        <Text>IERG</Text>
+          <Modals/>
       </Modal>
     </SafeAreaView>
   );
@@ -97,6 +118,40 @@ const styles = StyleSheet.create({
     bottom: '60.34%',
     color: 'rgba(56, 79, 125, 0.8)',
     fontSize:14
+  },
+  container1:{
+    backgroundColor:'rgba(255, 255, 255, 0.61)',
+    height:"100%"
+  },
+  img:{
+    width:'100%',
+    height:246.15,
+    top:-93,
+  },
+  text:{
+    width: 130,
+    height: 24,
+    left: '45%',
+    top: 160,
+    color:'#FFFF',
+    fontSize:19,
+    fontWeight:'700'
+  },
+  text1:{
+    fontFamily: 'Circular Std',
+    width: 314,
+    height: 16,
+    fontSize:15,
+    fontWeight:"700",
+    color:'#384F7D',
+    left:20
+  },
+  textModal:{
+    left: '50%',
+    right: '75.96%',
+    top: '10.53%',
+    bottom: '26.32%',
+    color:'#111'
   }
 });
 
