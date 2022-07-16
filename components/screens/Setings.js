@@ -43,7 +43,7 @@ const Setings=()=>{
           <Image style={{bottom:4, left:10}} source={require('../img/general.png')}/><Text style={{left:40, bottom:25, fontSize:16, color:'rgba(68, 89, 132, 0.8)'}}>О приложении</Text>
         </View>
         <View style={styles.divi6}>
-          <Text style={{left:40, bottom:25, fontSize:16, color:'#D45E5E'}}>ВЫЙТИ</Text>
+          <Text style={{left:40, bottom:20, fontSize:16, color:'#D45E5E'}}>ВЫЙТИ</Text>
         </View>
 
         
@@ -111,7 +111,7 @@ const styles=StyleSheet.create({
     },
     divi6:{
       width: '100%',
-      top: 100,
+      top: 110,
       borderColor: 'rgba(56, 79, 125, 0.1)',
       borderBottomWidth: 3
     }
