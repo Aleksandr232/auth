@@ -28,19 +28,19 @@ const Setings=()=>{
         </ImageBackground>
         <View style={styles.divi}/>
         <View style={styles.divi1}>
-          <Image/><Text>eg</Text>
+          <Image source={require('../img/accunt.png')}/><Text>eg</Text>
         </View>
         <View style={styles.divi2}>
-          <Image/><Text>eg</Text>
+          <Image source={require('../img/noti.png')}/><Text>eg</Text>
         </View>
         <View style={styles.divi3}>
-          <Image/><Text>eg</Text>
+          <Image source={require('../img/privace.png')}/><Text>eg</Text>
         </View>
         <View style={styles.divi4}>
-          <Image/><Text>eg</Text>
+          <Image source={require('../img/help.png')}/><Text>eg</Text>
         </View>
         <View style={styles.divi5}>
-          <Image/><Text>eg</Text>
+          <Image source={require('../img/general.png')}/><Text>eg</Text>
         </View>
         <View style={styles.divi6}>
           <Image/><Text>eg</Text>
