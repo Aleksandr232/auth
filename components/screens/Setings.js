@@ -28,22 +28,22 @@ const Setings=()=>{
         </ImageBackground>
         <View style={styles.divi}/>
         <View style={styles.divi1}>
-          <Image source={require('../img/accunt.png')}/><Text>eg</Text>
+          <Image style={{bottom:4, left:10}} source={require('../img/accunt.png')}/><Text style={{left:40, bottom:25, fontSize:16, color:'rgba(68, 89, 132, 0.8)'}}>Аккаунт</Text>
         </View>
         <View style={styles.divi2}>
-          <Image source={require('../img/noti.png')}/><Text>eg</Text>
+          <Image style={{bottom:4, left:10}} source={require('../img/noti.png')}/><Text style={{left:40, bottom:25, fontSize:16, color:'rgba(68, 89, 132, 0.8)'}}>Уведомления</Text>
         </View>
         <View style={styles.divi3}>
-          <Image source={require('../img/privace.png')}/><Text>eg</Text>
+          <Image style={{bottom:4, left:10}} source={require('../img/privace.png')}/><Text style={{left:40, bottom:25, fontSize:16, color:'rgba(68, 89, 132, 0.8)'}}>Конфиденциальность</Text>
         </View>
         <View style={styles.divi4}>
-          <Image source={require('../img/help.png')}/><Text>eg</Text>
+          <Image style={{bottom:4, left:10}} source={require('../img/help.png')}/><Text style={{left:40, bottom:25, fontSize:16, color:'rgba(68, 89, 132, 0.8)'}}>Центер поддержки</Text>
         </View>
         <View style={styles.divi5}>
-          <Image source={require('../img/general.png')}/><Text>eg</Text>
+          <Image style={{bottom:4, left:10}} source={require('../img/general.png')}/><Text style={{left:40, bottom:25, fontSize:16, color:'rgba(68, 89, 132, 0.8)'}}>О приложении</Text>
         </View>
         <View style={styles.divi6}>
-          <Image/><Text>eg</Text>
+          <Text style={{left:40, bottom:25, fontSize:16, color:'#D45E5E'}}>ВЫЙТИ</Text>
         </View>
 
         
