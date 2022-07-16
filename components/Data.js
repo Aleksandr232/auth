@@ -49,7 +49,7 @@ const Data = () => {
     setisModalVisible(false)
   }
 
-  const Modals=({ title, img, author })=>(
+  const Modals=({title, img, author})=>(
     <View style={styles.container1}>
     <ImageBackground source={require('./img/el4.png')}  style={styles.img} >
       <Text style={styles.text}>Книга</Text>
@@ -73,15 +73,13 @@ const Data = () => {
         extraData={isRender}
       />
       <Modal
-        data={post}
-        renderItem={renderItem}
-        keyExtractor={keyExtractor}
-        extraData={isRender}
         animationType="fade"
         visible={isModalVisible}
         onRequestClose={()=>setisModalVisible(false)}
+        presentationStyle='fullScreen'
+        
       >
-          <Modals />
+            <Modals/>
       </Modal>
     </SafeAreaView>
   );
