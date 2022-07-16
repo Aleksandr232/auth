@@ -5,6 +5,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 
+
 const Setings=()=>{
   const {isAuth, setIsAuth}= useAuth('')
   const authHandler=()=>{
@@ -25,8 +26,28 @@ const Setings=()=>{
                   </TouchableOpacity>
               </View>
         </ImageBackground>
+        <View style={styles.divi}/>
+        <View style={styles.divi1}>
+          <Image/><Text>eg</Text>
+        </View>
+        <View style={styles.divi2}>
+          <Image/><Text>eg</Text>
+        </View>
+        <View style={styles.divi3}>
+          <Image/><Text>eg</Text>
+        </View>
+        <View style={styles.divi4}>
+          <Image/><Text>eg</Text>
+        </View>
+        <View style={styles.divi5}>
+          <Image/><Text>eg</Text>
+        </View>
+        <View style={styles.divi6}>
+          <Image/><Text>eg</Text>
+        </View>
+
         
-       <Button title='выйти' onPress={()=>authHandler(false)}></Button>
+       
     </View>
     )
 }
@@ -50,6 +71,50 @@ const styles=StyleSheet.create({
       fontSize:19,
       fontWeight:'700'
     },
+    divi:{
+      width: '100%',
+      height: 0,
+      left: 0,
+      bottom: 80,
+      borderColor: 'rgba(56, 79, 125, 0.1)',
+      borderBottomWidth: 3
+    },
+    divi1:{
+      width: '100%',
+      bottom: 50,
+      borderColor: 'rgba(56, 79, 125, 0.1)',
+      borderBottomWidth: 3
+    },
+    divi2:{
+      width: '100%',
+      bottom: 20,
+      borderColor: 'rgba(56, 79, 125, 0.1)',
+      borderBottomWidth: 3
+    },
+    divi3:{
+      width: '100%',
+      top: 10,
+      borderColor: 'rgba(56, 79, 125, 0.1)',
+      borderBottomWidth: 3
+    },
+    divi4:{
+      width: '100%',
+      top: 40,
+      borderColor: 'rgba(56, 79, 125, 0.1)',
+      borderBottomWidth: 3
+    },
+    divi5:{
+      width: '100%',
+      top: 70,
+      borderColor: 'rgba(56, 79, 125, 0.1)',
+      borderBottomWidth: 3
+    },
+    divi6:{
+      width: '100%',
+      top: 100,
+      borderColor: 'rgba(56, 79, 125, 0.1)',
+      borderBottomWidth: 3
+    }
     
   })
 
