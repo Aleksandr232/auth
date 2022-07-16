@@ -1,14 +1,16 @@
 import React from 'react';
 import { StyleSheet, Text, View, ImageBackground, Button} from 'react-native';
+import { useAuth } from '../useAuth';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 const Setings=()=>{
-  
-  const logout = async() => {
-    await AsyncStorage.removeItem('row@232.ru');
-    setIsAuth(true)
-  }
+  const {isAuth, setIsAuth}= useAuth('')
+
+  const authHandler=()=>{
+         AsyncStorage.removeItem('token')
+         setIsAuth(false)
+      }
     return(
         <View style={styles.container}>
        
@@ -18,7 +20,7 @@ const Setings=()=>{
           
         </ImageBackground>
         
-       
+       <Button title='выйти' onPress={()=>authHandler(false)}></Button>
     </View>
     )
 }
