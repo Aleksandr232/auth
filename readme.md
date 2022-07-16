@@ -1,0 +1,5 @@
+- тестовое задание мабильное приложение 
+- EXPO
+- React-native
+- React-navigation
+- Async-storage
