@@ -1,23 +1,29 @@
-import React from 'react';
-import { StyleSheet, Text, View, ImageBackground, Button} from 'react-native';
+import React,{useState} from 'react';
+import { StyleSheet, Text, View, ImageBackground, Button, TouchableOpacity, Image} from 'react-native';
 import { useAuth } from '../useAuth';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import Books from './Books';
 
 
 const Setings=()=>{
   const {isAuth, setIsAuth}= useAuth('')
-
   const authHandler=()=>{
          AsyncStorage.removeItem('token')
          setIsAuth(false)
       }
+  
+  
+
+
     return(
         <View style={styles.container}>
-       
         <ImageBackground source={require('../img/el4.png')}  style={styles.img} >
            <Text style={styles.text}>Настройки</Text>
-           
-          
+              <View style={{flex:1, top:140, left:50}}>
+                  <TouchableOpacity onPress={()=>onPressBack('')}>
+                      <Image source={require('../img/strel.png')}/>
+                  </TouchableOpacity>
+              </View>
         </ImageBackground>
         
        <Button title='выйти' onPress={()=>authHandler(false)}></Button>

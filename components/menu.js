@@ -1,6 +1,4 @@
 import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import { BottomNavigation, Text } from 'react-native-paper';
 import { View, ImageBackground, StyleSheet} from 'react-native';
 import Books from './screens/Books';
