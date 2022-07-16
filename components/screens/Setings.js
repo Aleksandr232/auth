@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import { StyleSheet, Text, View, ImageBackground, Button, TouchableOpacity, Image} from 'react-native';
 import { useAuth } from '../useAuth';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import Books from './Books';
+
 
 
 const Setings=()=>{
@@ -20,7 +20,7 @@ const Setings=()=>{
         <ImageBackground source={require('../img/el4.png')}  style={styles.img} >
            <Text style={styles.text}>Настройки</Text>
               <View style={{flex:1, top:140, left:50}}>
-                  <TouchableOpacity onPress={()=>onPressBack('')}>
+                <TouchableOpacity onPress={()=>navigation.goBack()}>
                       <Image source={require('../img/strel.png')}/>
                   </TouchableOpacity>
               </View>
