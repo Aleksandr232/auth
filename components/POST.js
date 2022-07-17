@@ -17,4 +17,40 @@ export default POST = [
       author: "Stephen King",
       img: require("./img/thedark.png"),
     },
+    {
+      id: "4",
+      title: "Remote: Office Not Required",
+      author: "Jason Fried",
+      img: require("./img/image2.png"),
+    },
+    {
+      id: "5",
+      title: "Papillon",
+      author: "Henri Charriere",
+      img: require("./img/papillon.png"),
+    },
+    {
+      id: "6",
+      title: "The Dark Tower:The Gunslinger",
+      author: "Stephen King",
+      img: require("./img/thedark.png"),
+    },
+    {
+      id: "7",
+      title: "Remote: Office Not Required",
+      author: "Jason Fried",
+      img: require("./img/image2.png"),
+    },
+    {
+      id: "8",
+      title: "Papillon",
+      author: "Henri Charriere",
+      img: require("./img/papillon.png"),
+    },
+    {
+      id: "9",
+      title: "The Dark Tower:The Gunslinger",
+      author: "Stephen King",
+      img: require("./img/thedark.png"),
+    },
   ];

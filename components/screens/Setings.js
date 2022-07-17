@@ -52,11 +52,12 @@ const Setings=()=>{
             <Image style={{bottom:4, left:10}} source={require('../img/general.png')}/><Text style={{left:40, bottom:25, fontSize:16, color:'rgba(68, 89, 132, 0.8)'}}>О приложении</Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={authHandler}>
           <View style={styles.divi6}>
+          <TouchableOpacity onPress={authHandler}>
             <Text style={{left:40, bottom:20, fontSize:16, color:'#D45E5E'}}>ВЫЙТИ</Text>
+          </TouchableOpacity>
           </View>
-        </TouchableOpacity>
+        
 
         
        

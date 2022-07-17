@@ -88,7 +88,7 @@ const Data = () => {
 const styles = StyleSheet.create({
   container: {
     width: 415,
-    height: 370,
+    height: 420,
     left: 30,
     bottom: 140
   },
@@ -97,6 +97,11 @@ const styles = StyleSheet.create({
     padding: 20,
     marginVertical: 8,
     marginHorizontal: 16,
+    shadowColor: 'black',
+    shadowOpacity: 0.26,
+    shadowOffset: { width: 0, height: 2},
+    shadowRadius: 10,
+    elevation: 3,
     width: 315,
     height: 147,
   },
