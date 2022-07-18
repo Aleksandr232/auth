@@ -28,7 +28,7 @@ const Data = () => {
       <Text style={styles.author}>{author}</Text>
       <Image
         style={{ left: 4, width: 71, height: 107, bottom: '55%',  }}
-        source={img}
+        source={{uri:img}}
       />
       <View style={styles.rating}>
         <Rating count={5} defaultRating={4} imageSize={16} />
@@ -49,7 +49,7 @@ const Data = () => {
     setisModalVisible(false)
   }
 
-  const Modals=({title, img, author})=>(
+  const Modals=({title, author})=>(
     <View style={styles.container1}>
     <ImageBackground source={require('./img/el4.png')}  style={styles.img} >
       <Text style={styles.text}>Книга</Text>
