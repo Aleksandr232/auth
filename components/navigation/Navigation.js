@@ -6,11 +6,11 @@ import Setings from '../screens/Setings';
 const Stack = createNativeStackNavigator();
 
   export default function Navigation(){
-  (
+  return(
     <NavigationContainer>
-    <Stack.Navigator >
-      <Stack.Screen name="Books" component={Books} />
-      <Stack.Screen name="Setings" component={Setings} />
+    <Stack.Navigator initialRouteName="Books">
+      <Stack.Screen name="Books"  options={{title:'Книги', headerShown: false}}  component={Books} />
+      <Stack.Screen name="Setings" options={{title:'Настройки', headerShown: false}}  component={Setings} />
     </Stack.Navigator>
   </NavigationContainer>
   )

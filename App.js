@@ -1,8 +1,10 @@
 import React,{useState} from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet,  View, Image } from 'react-native';
 import { AuthContext } from './components/authContext';
 import AuthForm from './components/AuthForm'; 
 import Menu from './components/menu';
+
+
 
 
 
@@ -14,7 +16,7 @@ import Menu from './components/menu';
     
     <AuthContext.Provider value={{isAuth, setIsAuth}}>
        <View >  
-      {!isAuth ? <AuthForm/> : <Menu />}
+      {!isAuth ? <AuthForm/> : <Menu /> }
      </View> 
     </AuthContext.Provider>
   );

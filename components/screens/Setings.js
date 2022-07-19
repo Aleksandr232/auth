@@ -21,7 +21,7 @@ const Setings=({navigation})=>{
         <ImageBackground source={require('../img/el4.png')}  style={styles.img} >
            <Text style={styles.text}>Настройки</Text>
               <View style={{flex:1, top:140, left:50}}>
-                <TouchableOpacity onPress={()=>navigation.goBack('Books')}>
+                <TouchableOpacity onPress={()=>navigation.navigate('Books')}>
                       <Image source={require('../img/strel.png')}/>
                   </TouchableOpacity>
               </View>

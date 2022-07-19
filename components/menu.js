@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { BottomNavigation, Text } from 'react-native-paper';
 import { View, ImageBackground, StyleSheet} from 'react-native';
-import Books from './screens/Books';
+import BooksNavigate from './navigation/Navigation';
 import Setings from './screens/Setings';
 
 
@@ -14,7 +14,7 @@ export default function Menu() {
     ]);
   
     const renderScene = BottomNavigation.SceneMap({
-      Books: Books,
+      Books: BooksNavigate,
       Setings: Setings,
       
       
