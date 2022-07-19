@@ -12,6 +12,9 @@ const Setings=({navigation})=>{
          AsyncStorage.removeItem('token')
          setIsAuth(false)
       }
+  const navigscreen=()=>{
+    navigation.navigate("Books")
+  }
   
   
 
@@ -21,7 +24,7 @@ const Setings=({navigation})=>{
         <ImageBackground source={require('../img/el4.png')}  style={styles.img} >
            <Text style={styles.text}>Настройки</Text>
               <View style={{flex:1, top:140, left:50}}>
-                <TouchableOpacity onPress={()=>navigation.navigate('Books')}>
+                <TouchableOpacity onPress={navigscreen}>
                       <Image source={require('../img/strel.png')}/>
                   </TouchableOpacity>
               </View>
