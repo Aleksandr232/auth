@@ -2,11 +2,11 @@
   "expo": {
     "name": "auth",
     "slug": "auth",
-    "version": "2.0.2",
+    "version": "2.0.3",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/books.jpg",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/books.jpg",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
