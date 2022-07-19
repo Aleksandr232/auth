@@ -9,7 +9,7 @@
       "image": "./assets/books.jpg",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
-    },
+    }, 
     "updates": {
       "fallbackToCacheTimeout": 0
     },
