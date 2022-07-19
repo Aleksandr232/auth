@@ -6,7 +6,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 
-const Setings=()=>{
+const Setings=({navigation})=>{
   const {isAuth, setIsAuth}= useAuth('')
   const authHandler=()=>{
          AsyncStorage.removeItem('token')
@@ -21,7 +21,7 @@ const Setings=()=>{
         <ImageBackground source={require('../img/el4.png')}  style={styles.img} >
            <Text style={styles.text}>Настройки</Text>
               <View style={{flex:1, top:140, left:50}}>
-                <TouchableOpacity onPress={()=>navigation.goBack()}>
+                <TouchableOpacity onPress={()=>navigation.goBack('Books')}>
                       <Image source={require('../img/strel.png')}/>
                   </TouchableOpacity>
               </View>
